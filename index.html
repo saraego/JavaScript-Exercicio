@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        .container{
+            width: 400px;
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: aliceblue;
+            margin: 0 auto;
+            margin-top: 200px;
+            
+        }
+        .divs{
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        label{
+            font-size: 1.2rem;
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        input{
+            width: 60%;
+            padding: 5px;
+            outline: none;
+            border: none;
+            border-radius: 5px;
+            display: block;
+        }
+        .divs-btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+        }
+        button{
+            width: 40%;
+            padding: 4px;
+            background-color: black;
+            color:#fff;
+            cursor: pointer;
+        }
+        button:active{
+            opacity: .5;
+        }
+       
+        .divs-btn small{
+            font-size: .8rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: rgb(247, 5, 5);
+            font-weight: bold;
+            width: 300px;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form autocomplete="off">
+
+            <div class="divs">
+                <label for="email">E-email</label>
+                <input type="text" id="email" placeholder="Digite seu e-email">
+            </div>
+            <small id="textEmail"></small>
+
+            <div class="divs">
+                <label for="password">senha</label>
+                <input type="password" id="password" placeholder="Digite sua senha">
+            </div>
+            <small id="textPassword"></small>
+
+
+            <div class="divs-btn">
+                <button type="submit">Entrar</button>
+                <small id="textForm"></small>
+            </div>
+            
+        </form>
+    </div>
+</body>
+<script src="./main.js"></script>
+</html>
